@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alumni+Sans:wght@500;600;700&family=DM+Serif+Display&family=El+Messiri:wght@400;500;600;700&family=Montserrat:wght@300;500;600&family=Teko:wght@300;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/index.css">
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>  
+  <div class="container">
+    <header>
+      <div class="inner">
+        <h1><a href=""><span class="blind">younglim</span></a></h1>
+        <nav class="gnb">
+          <ul>
+            <li data-tab="#brand"><a href="">주얼리</a></li>
+            <li data-tab="#product"><a href="">향수</a></li>
+            <li data-tab="#interior"><a href="">메이크업</a></li>
+            <li class="on"><a href="">샤넬2022</a></li>
+            <li class="on"><a href="">샤넬소개</a></li>
+          </ul>
+        </nav>
+        <div class="util_nav">
+          <a href="" class="search"><span class="blind">검색</span></a>
+          <a href="" class="wish"><span class="blind">찜하기</span></a>
+          <a href="" class="mypage"><span class="blind">장바구니</span></a>          
+        </div>
+      </div>   
+      
+     
+      <div class="header_menu" id="brand">
+        <div class="inner">
+          <div class="sub_left">
+            <em class="title">주얼리</em>
+            <div class="title_menu">
+              <ul>
+                <li><a href="">링</a></li>
+                <li><a href="">네크리스</a></li>
+                <li><a href="">이어링</a></li>
+                <li><a href="">브레이슬릿</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="sub_right">
+            <div class="swiper img_area">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href=""><img src="images/sub01.jpg" alt="화장품"></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href=""><img src="images/sub02.webp" alt="시계"></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href=""><img src="images/sub03.jpg" alt="아이웨어"></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href=""><img src="images/sub04.jpg" alt="가방"></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href=""><img src="images/sub05.webp" alt="패션"></a>
+                </div>
+              </div>
+              <div class="swiper pagination">
+                <span class="on"></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="txt_area">
+              <ul>
+                <li><a href="" class="on">e카탈로그</a></li>
+                <li><a href="" class="on">최근 본 제품</a></li>
+                <li>
+                  <a href="">
+                    <p>스페셜 에디션 아이템과 함께<br> 나만의 쇼핑을 즐기세요</p>
+                    <img src="images/sub_menu.jpg" alt="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header_menu" id="product">
+        <div class="inner">
+          <div class="sub_left">
+            <em class="title">향수</em>
+            <div class="title_menu">
+              <ul>   
+                <li><a href="" data-tab="#edition" class="arrow">스페셜 에디션</a></li>
+                <li><a href="" data-tab="#new_arrival" class="arrow">신제품</a></li>
+                <li><a href="" data-tab="#w_perfume" class="arrow">여성 향수</a></li>
+                <li><a href="" data-tab="#m_perfume" class="arrow">남성 향수</a></li>
+                <li><a href="" data-tab="#bath" class="arrow">바스 & 바디</a></li>
+                <li><a href="" data-tab="#collection" class="arrow">향수 컬렉션</a></li>
+                <li><a href="" data-tab="#built_in" class="arrow">모든 제품 보기</a></li>
+              </ul>
+            </div>           
+          </div>          
+          <div class="product_sub" id="edition">
+            <ul>
+              <li><a href="">코코 마드모아젤</a></li>
+              <li><a href="">N°5로</a></li>
+              <li><a href="">젠틀 오일</a></li>
+            </ul>
+          </div>
+          <div class="product_sub" id="new_arrival">
+            <ul>
+              <li><a href="">코코 마드모아젤</a></li>
+              <li><a href="">블루 드 샤넬</a></li>
+              <li><a href="">샹스 오 띵드르</a></li>
+              <li><a href="">파리-에든버러</a></li>
+            </ul>
+          </div>
+          <div class="product_sub" id="w_perfume">
+            <ul>
+              <li><a href="">N°5</a></li>
+              <li><a href="">코코 마드모아젤</a></li>
+              <li><a href="">가브리엘 샤넬</a></li>
+              <li><a href="">샹스</a></li>
+              <li><a href="">알뤼르 센슈얼</a></li>
+              <li><a href="">크리스탈</a></li>
+              <li><a href="">모든 제품 보기</a></li>
+            </ul>
+          </div>
+          <div class="product_sub" id="m_perfume">
+            <ul>
+              <li><a href="">블루 드 샤넬</a></li>
+              <li><a href="">알뤼르 옴므 스포츠</a></li>
+              <li><a href="">알뤼르 옴므</a></li>
+              <li><a href="">플라티넘</a></li>
+              <li><a href="">에고이스트</a></li>
+              <li><a href="">뿌르 무슈</a></li>
+              <li><a href="">안테우스</a></li>
+              <li><a href="">모든 제품 보기</a></li>
+            </ul>
+          </div>
+          <div class="product_sub" id="bath">
+            <ul>
+              <li><a href="">여성 향수</a></li>
+              <li><a href="">남성 향수</a></li>
+              <li><a href="">모든 제품 보기</a></li>
+            </ul>
+          </div>
+          <div class="product_sub" id="collection">
+            <ul>
+              <li><a href="">레 젝스클루시프 드 샤넬</a></li>
+              <li><a href="">레 조 드 샤넬</a></li>
+              <li><a href="">샤넬 향수</a></li>
+            </ul>
+          </div>          
+          <div class="sub_right">
+            <div class="swiper img_area">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href=""><img src="images/sub01.jpg" alt="화장품"></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href=""><img src="images/sub02.webp" alt="시계"></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href=""><img src="images/sub03.jpg" alt="아이웨어"></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href=""><img src="images/sub04.jpg" alt="가방"></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href=""><img src="images/sub05.webp" alt="패션"></a>
+                </div>
+              </div>
+              <div class="swiper pagination"></div>
+            </div>
+            <div class="txt_area">
+              <ul>
+                <li><a href="" class="on">e카탈로그</a></li>
+                <li><a href="" class="on">최근 본 제품</a></li>
+                <li>
+                  <a href="">
+                    <p>당신에게 꼭 맞는 스타일을<br> 추천해 드립니다.</p>
+                    <img src="images/sub_menu.jpg" alt="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header_menu" id="interior">
+        <div class="inner">
+          <div class="sub_left">
+            <em class="title">메이크업</em>
+            <div class="title_menu">
+              <ul>
+                <li><a href="">스페셜 에디션</a></li>
+                <li><a href="">신제품</a></li>
+                <li><a href="">파운데이션</a></li>
+                <li><a href="">베이스</a></li>
+                <li><a href="">블러셔</a></li>
+                <li><a href="">아이섀도우</a></li>
+                <li><a href="">립스틱</a></li>
+                <li><a href="">모든 제품 보기</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="sub_right">
+            <div class="swiper img_area">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href=""><img src="images/sub01.jpg" alt="화장품"></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href=""><img src="images/sub02.webp" alt="시계"></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href=""><img src="images/sub03.jpg" alt="아이웨어"></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href=""><img src="images/sub04.jpg" alt="가방"></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href=""><img src="images/sub05.webp" alt="패션"></a>
+                </div>
+              </div>
+              <div class="swiper pagination"></div>
+            </div>
+            <div class="txt_area">
+              <ul>
+                <li><a href="" class="on">e카탈로그</a></li>
+                <li><a href="" class="on">최근 본 제품</a></li>
+                <li>
+                  <a href="">
+                    <p>당신에게 꼭 맞는 스타일을<br> 추천해 드립니다.</p>
+                    <img src="images/sub_menu.jpg" alt="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>      
+    </header>    
+
+    <main>
+      <div class="main_vis">  
+        <div class="swiper main_slide">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <img src="images/main_bg01.jpg" alt="아이웨어">     
+              <div class="txt_area">
+                <strong>EYEWEAR</strong>
+                <p>당신과 가장 잘 어울리는 아이웨어를 찾아보세요.
+                  샤넬만의 스타일과 감각으로 나만의 아이웨어 아이템을
+                  가져보세요.
+                </p>
+                <a href="" class="more_btn">MORE</a>
+              </div>       
+            </li>
+            <li class="swiper-slide">
+              <img src="images/main_bg02.jpg" alt="립스틱">
+              <div class="txt_area">
+                <strong>LIQUID LIP STICK</strong>
+                <p>시선을 사로잡는 강렬한 매력
+                  루쥬 알뤼르 라끄, 편안하게 밀착되는 포뮬러&새틴처럼
+                  매끄럽게 빛나는 울트라웨어 리퀴드 립스틱
+                </p>
+                <a href="" class="more_btn">MORE</a>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <img src="images/main_bg03.jpg" alt="향수">
+              <div class="txt_area">
+                <strong>DIVE INTO BLEU*</strong>
+                <p>
+                  남성을 위한 샤넬 메이크업과 스킨케어
+                  아로마틱 우디 노트를 선사하는 향수
+                  블루 드 샤넬을 만나보세요.
+                </p>
+                <a href="" class="more_btn">MORE</a>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <img src="images/main_bg04.webp" alt="패션">
+              <div class="txt_area">
+                <strong>CRUISE COLLECTION</strong>
+                <p>무료 실측 상담만 받아도 선물을 드립니다.
+                  쉽고 빠른 1:1 맞춤 인테리어 상담,
+                  영림과 함께 시작해보세요.
+                </p>
+                <a href="" class="more_btn">MORE</a>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <img src="images/main_bg05.jpg" alt="">
+              <div class="txt_area">
+                <strong>COCO CRUSH</strong>
+                <p>강인함과 부드러움, 간결함과 밀도,
+                  COCO CURSH 컬렉션은 운명적인 만남으로
+                  시작되는 이야기를 들려줍니다.
+                </p>
+                <a href="" class="more_btn">MORE</a>
+              </div>
+            </li>
+          </ul>          
+          <div class="cursor"></div>
+          <a href="" class="btn prev"><span class="blind">이전</span></a>
+          <a href="" class="btn next"><span class="blind">다음</span></a>
+          <div class="swiper scroll_box">            
+            <div class="swiper scroll_track">
+              <div class="swiper scroll_bar"></div>
+            </div>            
+            <span>Scroll</span>
+          </div>       
+        </div>        
+      </div>
+
+      <div class="product">          
+        <h2 class="blind">제품들</h2>      
+        <div class="txt_area inner">
+          <p>다양한 라이프스타일 속에서 최적화된            
+              당신의 스타일을 디자인합니다.<br>
+              가치 있는 당신의 일상을 위한 취향에
+              딱 맞는 제품과 디자인을 만나보세요.        
+          </p>
+          <span>Lifestyle design beyond material</span>
+        </div>                    
+          <div class="swiper content_slide">            
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <a href="">
+                  <img src="images/product_01.webp" alt="핸드백">
+                  <span>핸드백</span>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="">
+                  <img src="images/product_02.jpg" alt="기초케어">
+                  <span>기초케어</span>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="">
+                  <img src="images/product_03.webp" alt="아이웨어">
+                  <span>아이웨어</span>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="">
+                  <img src="images/product_04.jpg" alt="패션">
+                  <span>패션</span>                                   
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="">
+                  <img src="images/product_05.jpg" alt="슈즈">
+                  <span>슈즈</span> 
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="">
+                  <img src="images/product_06.jpg" alt="메이크업">
+                  <span>메이크업</span>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="">
+                  <img src="images/product_07.jpg" alt="주얼리">
+                  <span>주얼리</span>
+                </a>
+              </li>
+            </ul>
+            <div class="cursor"></div>    
+          </div>
+          <div class="drag"></div>     
+      </div>
+      <div class="fashion">
+        <div class="fashion_nav">
+            <ul>          
+              <li data-tab="#tab01"><a href="" class="active">Modern</a></li>
+              <li data-tab="#tab02"><a href="">Natural</a></li>
+              <li data-tab="#tab03"><a href="" >Classic</a></li>
+              <li data-tab="#tab04"><a href="">Unique</a></li>          
+            </ul>
+        </div>
+        <div class="img_area">
+          <div class="inner show" id="tab01">            
+            <div class="content content01">
+              <a href="">
+                <img src="images/fashion01.webp" alt="패션쇼이미지">
+                <span class="txt"><em>Collection Preview&nbsp;&nbsp;</em>CHANEL</span>
+              </a>
+            </div>
+            <div class="content content02">
+              <a href="">
+                <img src="images/fashion02.webp" alt="패션쇼이미지" class="img02">
+                <span class="txt"><em>Collection Preview&nbsp;&nbsp;</em>CHANEL</span>
+              </a>
+            </div>            
+            <div class="content content03">
+              <div class="title"><h2>Modern</h2></div>
+              <a href="" class="img01">
+                <img src="images/fashion03.jpg" alt="패션쇼이미지" class="img03">
+                <span class="txt"><em>Collection Preview&nbsp;&nbsp;</em>CHANEL</span>
+              </a>
+              <div class="txt_area">
+                <p>
+                  프랑스 파리의 그랑 팔레 에페메르(Grand Palais Éphémère)에서 열린
+                  샤넬 2022 봄-여름 레디-투-웨어 쇼를 감상한
+                  샤넬 하우스 앰배서더와 친구들이 각자의 소감을 전합니다.
+                </p>
+                <strong>CHANEL</strong>
+              </div>
+              <a href="" class="interior">
+                <span>레디-투-웨어 쇼</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="img_area">
+          <div class="inner" id="tab02">            
+            <div class="content content01">
+              <a href="">
+                <img src="images/fashion07.png" alt="패션쇼이미지">
+                <span class="txt"><em>Collection Preview&nbsp;&nbsp;</em>CHANEL</span>
+              </a>
+            </div>
+            <div class="content content02">
+              <a href="">
+                <img src="images/fashion08.png" alt="패션쇼이미지" class="img02">
+                <span class="txt"><em>Collection Preview&nbsp;&nbsp;</em>CHANEL</span>
+              </a>
+            </div>            
+            <div class="content content03">
+              <div class="title"><h2>Natural</h2></div>
+              <a href="" class="img01">
+                <img src="images/fashion09.png" alt="패션쇼이미지" class="img03">
+                <span class="txt"><em>Collection Preview&nbsp;&nbsp;</em>CHANEL</span>
+              </a>
+              <div class="txt_area">
+                <p>
+                  프랑스 파리의 그랑 팔레 에페메르(Grand Palais Éphémère)에서 열린
+                  샤넬 2022 봄-여름 레디-투-웨어 쇼를 감상한
+                  샤넬 하우스 앰배서더와 친구들이 각자의 소감을 전합니다.
+                </p>
+                <strong>CHANEL</strong>
+              </div>
+              <a href="" class="interior">
+                <span>레디-투-웨어 쇼</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="img_area">
+          <div class="inner" id="tab03">            
+            <div class="content content01">
+              <a href="">
+                <img src="images/fashion05.png" alt="패션쇼이미지">
+                <span class="txt"><em>Collection Preview&nbsp;&nbsp;</em>CHANEL</span>
+              </a>
+            </div>
+            <div class="content content02">
+              <a href="">
+                <img src="images/fashion06.png" alt="패션쇼이미지" class="img02">
+                <span class="txt"><em>Collection Preview&nbsp;&nbsp;</em>CHANEL</span>
+              </a>
+            </div>            
+            <div class="content content03">
+              <div class="title"><h2>Classic</h2></div>
+              <a href="" class="img01">
+                <img src="images/fashion04.png" alt="패션쇼이미지" class="img03">
+                <span class="txt"><em>Collection Preview&nbsp;&nbsp;</em>CHANEL</span>
+              </a>
+              <div class="txt_area">
+                <p>
+                  프랑스 파리의 그랑 팔레 에페메르(Grand Palais Éphémère)에서 열린
+                  샤넬 2022 봄-여름 레디-투-웨어 쇼를 감상한
+                  샤넬 하우스 앰배서더와 친구들이 각자의 소감을 전합니다.
+                </p>
+                <strong>CHANEL</strong>
+              </div>
+              <a href="" class="interior">
+                <span>레디-투-웨어 쇼</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="img_area">
+          <div class="inner" id="tab04">            
+            <div class="content content01">
+              <a href="">
+                <img src="images/fashion10.png" alt="패션쇼이미지">
+                <span class="txt"><em>Collection Preview&nbsp;&nbsp;</em>CHANEL</span>
+              </a>
+            </div>
+            <div class="content content02">
+              <a href="">
+                <img src="images/fashion11.png" alt="패션쇼이미지" class="img02">
+                <span class="txt"><em>Collection Preview&nbsp;&nbsp;</em>CHANEL</span>
+              </a>
+            </div>            
+            <div class="content content03">
+              <div class="title"><h2>Unique</h2></div>
+              <a href="" class="img01">
+                <img src="images/fashion12.png" alt="패션쇼이미지" class="img03">
+                <span class="txt"><em>Collection Preview&nbsp;&nbsp;</em>CHANEL</span>
+              </a>
+              <div class="txt_area">
+                <p>
+                  프랑스 파리의 그랑 팔레 에페메르(Grand Palais Éphémère)에서 열린
+                  샤넬 2022 봄-여름 레디-투-웨어 쇼를 감상한
+                  샤넬 하우스 앰배서더와 친구들이 각자의 소감을 전합니다.
+                </p>
+                <strong>CHANEL</strong>
+              </div>
+              <a href="" class="interior">
+                <span>레디-투-웨어 쇼</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>   
+         
+      <div class="video">            
+        <div class="inner">
+          <div class="txt_area">
+            <h2>REBECCA DAYAN</h2>
+            <p>              
+              블랙 & 화이트의 순수한 색감,
+              유쾌한 여름 감성의 스트라이프, 
+              나풀대는 나비의 날갯짓이<br> 연상되는 
+              블랙 쉬폰이 한데 어우러지며, 신비롭고 로맨틱한 무드의 컬렉션이 탄생했습니다.                    
+            </p>
+            <a href="">
+              <span>더 보러가기</span>
+              <i class="more"></i>
+            </a>
+          </div>
+          <div class="img_area">
+            <img src="images/video_img.jpg" alt="잡지이미지">
+            <a href="" id="playBtn"><i class="play_btn"><span class="blind">재생</span></i></a>
+          </div>
+        </div>
+        <div class="video_pop">
+          <a href="" class="close"><span class="blind">닫기</span></a>
+        </div>
+      </div>
+
+      <div class="product_cate">
+        <div class="inner">          
+          <h2>Product Category</h2>
+          <div class="cate_nav">
+            <a href="" class="cate_img">
+              <img src="images/cate01.jpg" alt="아이웨어">
+              <span>아이웨어</span>
+            </a>
+            <a href="" class="cate_img">
+              <img src="images/cate02.jpg" alt="주얼리">
+              <span>주얼리</span>
+            </a>
+            <a href=""class="cate_img">
+              <img src="images/cate03.jpg" alt="시계">
+              <span>와치</span>
+            </a>
+            <a href="" class="cate_img">
+              <img src="images/cate04.jpg" alt="향수">
+              <span>향수</span>
+            </a>
+            <a href="" class="cate_img">
+              <img src="images/cate05.jpg" alt="메이크업">
+              <span>메이크업</span>
+            </a>
+            <a href="" class="cate_img">
+              <img src="images/cate06.jpg" alt="스킨케어">
+              <span>스킨케어</span>
+            </a>            
+          </div>
+          <div class="pick_title">
+            <strong>CHANEL'S PICK</strong>           
+          </div>          
+          <div class="swiper-pagination"></div>  
+          <div class="swiper cate-slide" id="tab01">                   
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="left left01">
+                  <a href="" class="txt img01 sun">                    
+                    <img src="images/pick01.jpg" alt="안경이미지">
+                    <span class="title text">FRAME</span>
+                  </a>
+                  <a href="" class="txt02 img02">                    
+                    <img src="images/pick02.jpg" alt="선글라스쓴여자">
+                    <span class="title02 text">OPTICAL</span>
+                  </a>
+                </div>
+                <div class="right">
+                  <a href="" class="txt03 img03">
+                    <img src="images/pick03.jpg" alt="선글라스쓴여자">
+                    <span class="title03 text">EYE WEAR</span>
+                  </a>              
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="left">
+                  <a href="" class="txt04 img04">
+                    <img src="images/pick04.jpg" alt="N°5주얼리">
+                    <span class="title04 text">N°5</span>
+                  </a>
+                </div>
+                <div class="right">
+                  <a href="" class="txt05 img05">
+                    <img src="images/pick05.png" alt="팔찌">
+                    <span class="title05 text">COLLECTION RUBAN</span>
+                  </a>
+                  <a href="" class="txt06 img06">
+                    <img src="images/pick06.jpg" alt="목걸이">
+                    <span class="title06 text">NECKLESS</span>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="left left02">
+                  <a href="" class="txt03 img03 watch">
+                    <img src="images/pick07.jpg" alt="시계">
+                    <span class="title03 text">WATCH</span>
+                  </a>                                               
+                </div>
+                <div class="right right02">                  
+                  <a href="" class="txt img01">
+                    <img src="images/watch.jpg" alt="시계">
+                    <span class="title07 text">BOY_FRIEND</span>
+                  </a>
+                  <a href="" class="txt02 img02">
+                    <img src="images/pick09.jpg" alt="시계">
+                    <span class="title08 text">J12 EDITION</span>
+                  </a>       
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="left left01">
+                  <a href="" class="txt img01">
+                    <img src="images/pick10.png" alt="향수">
+                    <span class="title text">N°19</span>
+                  </a>  
+                  <a href="" class="txt02 img02">
+                    <img src="images/pick11.jpg" alt="향수">
+                    <span class="title02 text">BLUE DE CHANEL</span>
+                  </a>                                  
+                </div>
+                <div class="right">                  
+                  <a href="" class="txt03 img03">
+                    <img src="images/pick12.png" alt="향수">
+                    <span class="title03 text">MINI BUCKET BAGCOCO CHANEL</span>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="left">
+                  <a href="" class="txt04 img04">
+                    <img src="images/founda.jpg" alt="파운데이션">
+                    <span class="title04 text">FOUNDATION</span>
+                  </a>
+                </div>
+                <div class="right">
+                  <a href="" class="txt05 img05">
+                    <img src="images/pick14.jpg" alt="립스틱">
+                    <span class="title05 text">LIP STICK</span>
+                  </a>
+                  <a href="" class="txt06 img06">
+                    <img src="images/pick15.png" alt="메이크업에디션">
+                    <span class="title06 text">EDITION</span>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="left left02">
+                  <a href="" class="txt03 img03">
+                    <img src="images/pick16.png" alt="핸드크림">
+                    <span class="title03 text">COSMETIC</span>
+                  </a>                                               
+                </div>
+                <div class="right right02">                  
+                  <a href="" class="txt img01">
+                    <img src="images/pick17.png" alt="기초화장품">
+                    <span class="title07 text">LE JOUR DE CHANEL</span>
+                  </a>
+                  <a href="" class="txt02 img02">
+                    <img src="images/pick18.jpg" alt="스킨">
+                    <span class="title08 text">SKIN CARE</span>
+                  </a>       
+                </div>
+              </div>
+            </div>    
+                               
+            <div class="cursor"></div>
+            <a href="" class="btn prev"><span class="blind">이전</span></a>
+            <a href="" class="btn next"><span class="blind">다음</span></a>
+          </div>                 
+        </div>
+      </div>
+      <div class="background">
+        <img src="images/bg.jpg" alt="패션쇼사진">
+        <div class="txt_area">
+          <h2>시간이 흘러도 변하지 않는 가치</h2>
+          <p>시간이 흐름에도 지속되는 샤넬의 가치를 담아 행복한            
+            일상을 만들기 위해 샤넬은 끊임없이
+            고민하고 연구합니다.
+          </p>
+          <a href="" class="more_btn">더 보러가기</a>
+        </div>
+      </div>
+      <div class="magazine">
+        <div class="inner">
+          <div class="title">
+            <h2>샤넬 2022</h2>
+            <a href="">MORE</a>
+          </div>
+          <div class="content">
+            <a href="">
+              <div class="img_area">
+                <img src="images/maga01.jpg" alt="샤넬패션쇼">
+              </div>
+              <div class="txt_area">
+                <em>백스테이지 샤넬 2022</em>
+                <span>봄-여름 레디-투-웨어 쇼
+                  백스테이지. 샤넬 하우스
+                  앰배서더와 친구들이 컬렉션에 대한 소감을 전합니다.
+                </span>
+              </div>
+            </a>
+          </div>
+          <div class="content">
+            <a href="">
+              <div class="img_area">
+                <img src="images/maga02.jpg" alt="샤넬패션쇼">
+              </div>
+              <div class="txt_area">
+                <em>로맨스와 미스터리 사이의 묘한 무드</em>
+                <span>플레어 팬츠와 베스트가 검은 깃털이 장식되어 
+                  하늘거리는 시폰 스카프 케이프입니다.
+                </span>
+              </div>
+            </a>
+          </div>
+          <div class="content">
+            <a href="">
+              <div class="img_area">
+                <img src="images/maga03.jpg" alt="샤넬패션쇼">
+              </div>
+              <div class="txt_area">
+                <em>블랙 쉬폰 프린트 드레스.</em>
+                <span>나비의 날개처럼 몸을 감싸고 
+                  풀어진 단추 사이로 캐시미어 마감 그레이 
+                  시퀸 탑이 드러납니다.              
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="style">
+        <div class="inner">
+          <div class="txt_area">
+            <p>
+              자신만의 스타일을 찾아보세요.<br>
+              샤넬 주얼리를 착용하는 방법엔 한계가 없습니다.
+               
+            </p>
+            <em>About style</em>
+          </div>
+          <div class="img_area">
+            <div class="content">
+              <a href="">
+                <div class="img_area">
+                  <img src="images/content01.jpg" alt="반지">
+                </div>
+                <div class="txt_area">
+                  <strong>Eternal N°5 링</strong>
+                  <span>Eternal N°5 Ring</span>
+                  <i class="icon_arrow"></i>
+                </div>
+              </a>
+            </div>
+            <div class="content">
+              <a href="">
+                <div class="img_area">
+                  <img src="images/content02.jpg" alt="초커">
+                </div>
+                <div class="txt_area">
+                  <strong>Bouton de Camélia 초커</strong>
+                  <span>Bouton de Camélia choker</span>
+                  <i class="icon_arrow"></i>
+                </div>
+              </a>
+            </div>
+            <div class="content">
+              <a href="">
+                <div class="img_area">
+                  <img src="images/content03.jpg" alt="귀걸이">
+                </div>
+                <div class="txt_area">
+                  <strong>Eternal N°5 이어링</strong>
+                  <span>Eternal N°5 Earring</span>
+                  <i class="icon_arrow"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contents_box">
+        <div class="inner">
+          <div class="content makeup">
+            <img src="images/contents_01.png" alt="화장품">
+            <div class="txt_area">
+              <strong>스페셜 에디션</strong>
+              <p>샤넬 뷰티 공식 온라인 스토어에서만 
+                만날 수 있는<br> 스페셜 에디션 아이템과 
+                함께 나만의 쇼핑을 즐기세요.           
+              </p>
+              <a href="" class="more_btn">지금 살펴보기</a>
+            </div>
+          </div>
+          <div class="content">
+            <img src="images/contents_02.jpg" alt="선글라스낀모델">
+            <div class="txt_area">
+              <strong>시즌 신상품</strong>
+              <p>가장 잘 어울리는 아이웨어를 찾아보세요. <br>
+                카메라를 활성화하여 프레임을 피팅해보세요.          
+              </p>
+              <a href="" class="more_btn">지금 살펴보기</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>  
+    <footer>
+      <div class="inner">
+        <div class="footer_nav">
+          <h2><a href="">CHANEL</a></h2>
+          <div class="cate">
+            <div class="content">
+              <ul>
+                <li><a href="">오뜨 꾸뛰르</a></li>
+                <li><a href="">패션</a></li>
+                <li><a href="">하이 주얼리</a></li>
+                <li><a href="">화인 주얼리</a></li>
+                <li><a href="">워치</a></li>
+              </ul>
+            </div>
+            <div class="content">
+              <ul>
+                <li><a href="">아이웨어</a></li>
+                <li><a href="">향수</a></li>
+                <li><a href="">메이크업</a></li>
+                <li><a href="">스킨케어</a></li>
+                <li><a href="">사이트맵</a></li>
+              </ul>
+            </div>
+            <div class="content">
+              <ul>
+                <li><a href="">샤넬 멤버십</a></li>
+                <li><a href="">마이 페이지</a></li>
+                <li><a href="">케어 & 서비스</a></li>
+                <li><a href="">FAQ</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="company">
+          <div class="content">
+            <strong>샤넬 코리아 유한회사</strong>
+            <address>
+              서울특별시 중구 세종대로9길 41, 11층 (서소문동, 퍼시픽타워)<br>
+              대표이사 : 스테판티에리피에르블랑샤르<i class="bar"></i>             
+              사업자등록번호 : 106-81-29643<br>
+              패션 & 워치 화인 주얼리 080-200-2700<i class="bar"></i>           
+              향수 & 뷰티 080-332-2700          
+            </address>
+          </div>
+          <div class="content">
+            <strong>문의하기</strong>
+            <address>
+              고객 센터로 전화 또는 이메일 문의를 주실 경우
+               상담을<br> 도와 드리도록 하겠습니다.<br>
+               패션 & 워치 화인 주얼리 080-200-2700<i class="bar"></i>
+               향수 & 뷰티 080-332-2700<br>
+                <i class="bar"></i>   
+            </address>
+          </div>
+          <div class="content">
+            <strong>영림산업(주)</strong>
+            <address>
+              현금 등 구매에 관하여 FDK(02-006-00027) 구매안전(에스크로)<br>
+              서비스에 가입하여
+              고객님의 안전한 거래를 보장하고 있습니다.<br>              
+              이메일<i class="bar"></i>           
+              customer.service@chanel.co.kr         
+            </address>
+          </div>
+        </div>
+      </div>
+        <div class="cs">
+          <div class="inner">
+            <div class="copy">샤넬 코리아 유한회사</div>
+            <a href="tel:010">향수 & 뷰티 080-332-2700</a>
+          </div>
+        </div>             
+    </footer>
+    <a href="" class="chat">
+      <span>부티크 찾기</span>
+      <i class="chat_btn"></i>
+    </a> 
+  </div>
+
+</body>
+</html>

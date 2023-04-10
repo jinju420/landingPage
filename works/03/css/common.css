@@ -1,0 +1,169 @@
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+.hidden {overflow: hidden;}
+.swiper {height: 100%;}
+.kitchen img,
+.contents img,
+.air img {
+  width: 100%;height: 100%;object-fit: cover;
+}
+
+.inner {
+  max-width: 1400px;/* 반응형 */
+  margin: 0 auto;
+}
+.more {
+  display: block;
+  background: url(../images/right_w.svg) no-repeat;
+  width: 112px;
+  height: 34px;
+  background-size: 100%;
+  position: absolute;
+  bottom: -250px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition:1s;
+}
+.more.on {
+  transform: translateX(10px);
+}
+
+/*  swiper-pagination-bullet */
+
+.kitchen .swiper-pagination-bullet,.contents .swiper-pagination-bullet,
+.air .swiper-pagination-bullet {
+  width: auto;
+  height: 20px;
+  line-height: 20px;
+  border-radius: 0;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  opacity: 1;  
+  padding: 0 10px;  
+  background: none;
+  display: inline-block;
+  font-weight: 300;
+  position: relative;
+}
+.kitchen .swiper-pagination-bullet-active,
+.contents .swiper-pagination-bullet-active,
+.air .swiper-pagination-bullet-active {
+  font-weight: bold;
+}
+.recom .swiper-pagination-bullet,
+.new_product .swiper-pagination-bullet,
+.social .swiper-pagination-bullet { 
+  position: relative;
+  width: auto;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  font-size: 18px;
+  color: #222;
+  opacity: 1;/* 기본으로 있는거 */
+  padding: 0 10px;
+  display: inline-block;
+  background: none;
+  /*background: rgba(0, 0, 0, 0.2); 기본으로 있는거 */
+  border-radius: 0;
+}
+.recom .swiper-pagination-bullet-active,
+.new_product .swiper-pagination-bullet-active {
+  font-weight: bold;
+}
+
+
+
+/* swiper-pagination-bullet::after */
+
+.recom .swiper-pagination-bullet::after,
+.new_product .swiper-pagination-bullet::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 0%;
+  height: 3px;
+  background: #222;
+  transition: 0.5s; 
+}
+.recom .swiper-pagination-bullet:hover::after,
+.new_product .swiper-pagination-bullet:hover::after {
+  width: 100%;
+}
+.social .swiper-pagination-bullet::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -21px;
+  width: 0%;
+  height: 3px;
+  background: #222;
+  transition: 0.5s; 
+}
+.social .swiper-pagination-bullet:hover::after {
+  width: 100%;
+}
+.kitchen .swiper-pagination-bullet::after, 
+.contents .swiper-pagination-bullet::after, 
+.air .swiper-pagination-bullet::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 0;
+  height: 3px;
+  background: #fff;
+  transition: 0.5s; 
+ 
+}
+.kitchen .swiper-pagination-bullet:hover::after, 
+.contents .swiper-pagination-bullet:hover::after, 
+.air .swiper-pagination-bullet:hover::after {
+  width: 100%;
+}
+
+
+.recom .swiper-pagination-bullet {
+  width: auto;
+  height: auto;
+  text-align: center;
+  font-size: 18px;
+  color: #222;
+  opacity: 1;/* 기본으로 있는거 */
+  padding: 0 10px;
+  display: inline-block;
+  font-weight: 300;
+  background: none;/* 기본으로 있는거 */
+}
+
+.recom .swiper-pagination-bullet-active {
+  font-weight: bold;
+}
+
+/* .kitchen .swiper-pagination-bullet::after, 
+.contents .swiper-pagination-bullet::after, 
+.air .swiper-pagination-bullet::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  width: 0;
+  height: 3px;
+  background: #fff;
+  transition: 0.5s; 
+ 
+} 중간에서 너비 100%
+.kitchen .swiper-pagination-bullet:hover::after, 
+.contents .swiper-pagination-bullet:hover::after, 
+.air .swiper-pagination-bullet:hover::after {
+  width: 100%;
+  left: 0;
+} */

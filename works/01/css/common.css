@@ -1,0 +1,29 @@
+/* 공통 */
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0 0 0 0);
+}
+.inner {
+  width: 1240px;
+  margin: 0 auto;
+}
+.more_btn {
+  line-height: 36px;
+  width: 113px;
+  letter-spacing: -.1px;
+  border: 1px solid hsla(0,0%,100%,.5);
+  padding: 0 35px;
+  font-size: 14px;
+  color: #fff;
+  display: block;
+  font-weight: bold;
+  margin: 0 auto;
+  transition: .5s;
+}
+.more_btn:hover {
+  background: #fff;
+  color: #333;
+}

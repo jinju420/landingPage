@@ -1,0 +1,617 @@
+/* main */
+.main_vis .txt_area {
+  position: relative;  
+}
+.main_vis .txt_area h2 {
+  display: block;
+  font-size: 7vw;
+  font-weight: 700;
+  padding-top: 10px;
+  padding-left: 20px;
+  line-height: 1.2;
+  font-family: 'Montserrat', sans-serif;
+}
+.main_vis .txt_area a {
+  font-size: 15px;
+  font-weight: bold;
+  position: absolute;
+  bottom: -37px;
+  display: block;
+  padding-left: 20px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+}
+.main_vis .txt_area a::before {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #fff700;
+  margin-right: 15px;
+}
+.main_vis .img_area {  
+  margin-top:80px;
+  width: 100%;
+  overflow: hidden;  
+  position: relative;
+  width: auto;  
+  background: orangered;
+}
+.main_vis .img_area img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main_vis .img_area .bg_txt {
+  color: #666;    
+  font-family: 'Montserrat', sans-serif;
+}
+.main_vis .img_area .bg_txt strong {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 15vw;
+  transform: rotate(-30deg);
+  white-space: nowrap;
+  position: absolute;
+  font-family: Montserrat,sans-serif;
+}
+.main_vis .img_area .bg_txt strong.txt01 {
+  top: 50%;
+  z-index: 0;
+}
+.main_vis .img_area .bg_txt strong.txt02 {
+  top: 60%;
+  z-index: 0;
+  transform: translate(100%,-300%) rotate(-30deg);
+}
+
+.main_vis .name {
+  position: absolute;
+  bottom:10px;
+  left: 20px;
+  font-size: 14px;
+  z-index: 1;
+}
+.main_vis .name strong {
+  display: block;
+  font-weight: bold;
+  display: block;
+  padding-bottom: 5px;
+}
+.main_vis .apply {
+  display: block;
+  font-size: 17px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #fff700;
+  text-align: center;
+  line-height: 90px;
+  font-weight: bold;
+  font-family: 'Noto Sans KR', sans-serif;
+  position: absolute;
+  bottom: 15px;
+  right: 30px;
+}
+/* product */
+.product {
+  padding: 80px 20px 0;
+}
+.product img {object-fit: cover;}
+.product .title_area strong {  
+  font-size: 5vw;
+  line-height: 1.3;
+  letter-spacing: -1px;
+}
+.product .title_area p {  
+  font-size: 3vw;
+  line-height: 1.3;
+  padding-top: 25px; 
+  word-break: keep-all;
+}
+.product .title_area a.more_btn {
+  margin-top: 24px;
+  width: 178px;
+  height: 50px;
+  border: 1px solid #2d333a;
+  border-radius: 4px;
+  line-height: 48px;
+  text-align: center;
+  font-weight: bold;
+  display: block;
+  font-size: 15px;
+  transition: 0.3s;
+}
+.product .title_area a.more_btn:hover {
+  background: #2d333a;
+  color: #fff;
+}
+/* products */
+.products {
+  /* overflow: hidden;
+  padding: 24px 20px 48px; */
+  margin: 30px 0;
+}
+.products .swiper-slide {
+ width: 200px;
+}
+.products .content:last-child {margin-right: 0;}
+.products .content a img {
+  width: 100%;
+  height: 457px;
+  background-color: #f5f5f5;
+}
+.products .content .txt_area {
+  line-height: 30px;
+  padding-top: 16px;
+  padding-bottom: 48px;
+  color: #2d333a;
+  text-align: center;
+}
+.products .content .txt_area em {
+  display: block;
+  color: #abadb0;
+  font-size: 14px;  
+}
+.products .content .txt_area strong {
+  display: block;
+  font-size: 20px;  
+}
+.products .content .txt_area span {
+  display: block;
+  font-size: 16px;
+}
+.products .swiper-scrollbar {height: 2px;}
+.products .swiper-scrollbar-drag {
+  background: #000;
+  border-radius: 0;
+}
+/* styling */
+.styling {padding: 0 20px;}
+.styling .title {  
+  text-align: center;
+}
+.styling .title h2 {
+  font-size: 5vw;
+  line-height: 1.2;
+  color: #2f2f2f;
+  font-weight: 700;
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.styling .title p {
+  color: #696969;
+  font-size: 3vw;
+  line-height: 1.3;
+  padding-bottom: 30px;
+  word-break: keep-all;
+}
+.styling .title a.check {
+  display: inline-block;
+  padding: 20px 0;
+  color: #bd1e51;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: Montserrat,sans-serif;
+  position: relative;
+  padding-right: 30px;
+}
+.styling .title a.check::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 1px;
+  background: #bd1e51;
+  position: absolute;
+  top: 25px;
+  right: 0;
+  transform: rotate(44deg);
+}
+.styling .title a.check::after {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 1px;
+  background: #bd1e51;
+  position: absolute;
+  top: 28px;
+  right: 0;
+  transform: rotate(-44deg);
+}
+.styling .img_area {
+  padding-top: 30px;
+}
+.styling .img_area .content {
+  height: 160px;
+  overflow: hidden;
+  border-radius: 30px;
+  margin-bottom: 15px;
+  position: relative;
+  font-family: Montserrat,sans-serif;
+}
+.styling .img_area .content img {  
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  object-fit: cover;
+  background-position: top center;
+  transition: 2s;
+}
+.styling .img_area .content img:hover {
+  transform: scale(1.1)
+}
+.styling .img_area .content .txt_area {
+  position: absolute;
+  bottom: 30px;
+  left: 35px;
+  color: #fff;
+}
+.styling .img_area .content .txt_area strong {
+  display: block;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+.styling .img_area .content .txt_area span {
+  font-size: 14px;
+  font-weight: 500;
+}
+/* shoes */
+.shoes {
+  padding: 0 20px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  overflow: hidden;  
+}
+.shoes ul {  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.shoes .content {
+  width: calc(50% - 5px);
+  margin-bottom: 20px;
+  position: relative;
+}
+.shoes h2 {
+  text-align: center;
+  font-size: 25px;
+  letter-spacing: 1px;
+  padding-bottom: 50px;
+  font-family: Montserrat,sans-serif;
+}
+.shoes .content > span {
+  font-size: 10px;
+  background-color: #f0ede2;
+  padding: 5px 10px;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: Montserrat,sans-serif;
+}
+.shoes .content a {
+  display: block;
+  text-align: center;
+}
+.shoes .content a img {
+  width: 100%;
+}
+.shoes .content a.txt_area {
+  text-align: left;
+  margin-top: 15px;
+  line-height: 20px;
+  text-align: center;
+}
+.shoes .content a.txt_area p {
+  padding-bottom: 20px;
+  font-size: 14px;
+  letter-spacing: -0.05em;
+}
+/* wear */
+.wear {
+  padding: 100px 0;
+  position: relative;
+}
+.wear .bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+.wear::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;  
+  top: 0;
+  left: 0;
+  background:rgba(0,0,0,0.6);
+  z-index: 1;
+  backdrop-filter: blur(16px);
+}
+.wear h2 {
+  font-size: 24px;
+  color: #fff; 
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 20px;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  font-family: Montserrat,sans-serif;
+}
+.wear .img_area .main_slide {
+  height: 640px;
+}
+.wear img {
+  width: 100%;
+  height: 399px;
+  object-fit: cover;
+}
+.wear .txt_area {
+  padding: 20px;
+  line-height: 23px;
+  font-size: 17px;
+  background: #fff;
+  height: 150px;
+  position: relative;
+}
+.wear .txt_area strong {
+  font-weight: bold;
+  font-size: 20px;
+}
+.wear .txt_area p {
+  word-break: keep-all;
+  margin-top: 5px;
+}
+.wear .swiper-pagination {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+.wear .play_btn {
+  background: url(../images/play_btn.png) no-repeat;
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  background-size: 100%;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.wear .video_pop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0,0,0,0.5);  
+  transition: 0.5s;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1;
+}
+.wear .video_pop.on {
+  opacity: 1;
+  visibility: visible;
+}
+.wear .video_pop .iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  position: relative;
+  padding-bottom: 56.25%;  
+}
+.wear .video_pop .iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;  
+}
+.wear .video_pop .close_btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background: #f5f5f5;
+  position: absolute;
+  top:20px;
+  right:20px;
+}
+.wear .video_pop .close_btn::after {
+  content: "";
+  display: inline-block;
+  background: url(../images/close_bk.svg) no-repeat;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 18px;
+  right:17px;
+  background-size: 100%;
+  z-index: 1;
+}
+
+.wear .swiper-slide::after {
+  content:"";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  transition: 0.3s; 
+}
+.wear .swiper-slide-active::after {
+  visibility: hidden;
+  opacity: 0;
+}
+/* chat */
+.chat {
+  padding: 50px 20px;
+}
+.chat > h2 {
+  padding-bottom: 40px;
+  text-align: center;
+  color: #d5333e;
+  font-weight: bold;
+  font-size: 35px;
+}
+.chat > ul > li:hover strong {
+  color: #d5333e;
+}
+.chat > ul > li {
+  padding: 30px 0;
+  border-bottom: 1px solid #f0ede2;
+  position: relative;
+}
+
+.chat > ul > li::after {
+  content: "";
+  background: url(../images/right.svg) no-repeat;
+  width: 10px;
+  height: 10px;
+  background-size: 15px;
+  display: inline-block;
+  position: absolute;
+  background-position: center center;
+  top: 40px;
+  right: 0;
+  padding-right: 20px;
+  transition: 1s cubic-bezier(.2,.6,.4,1);
+}
+.chat > ul > li::after:hover {
+  padding-left: 0;
+}
+.chat ul li a strong {
+  display: block;
+  font-size: 26px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  transition: 0.5s;
+}
+.chat ul li a span {font-size: 13px;}
+
+.chat #build .title p {
+  font-size: 15px;
+  padding-top: 25px;
+  padding-bottom: 15px;
+  line-height: 20px;
+}
+.chat #sel {
+  width: 100%;
+  border: 1px solid rgb(218, 214, 218);
+  background: #f9f9f9;
+  padding: 20px;
+  outline: none;
+  background: url(../images/down_ic.svg) no-repeat;
+  background-position: right 20px center;/* right에서 20px띄워라,상하가운데 */ 
+  background-size: 15px;
+
+}
+
+/* chat공통 */
+.chat {
+  position: relative;
+  height: 100%;
+  line-height: 20px;
+}
+.chat a, em {font-family: Montserrat,sans-serif;}
+.chat span {font-size: 14px;color: #999;}
+.chat .container {
+  position: fixed;
+  top: 0;
+  right:-100%;
+  width: 100%;
+  height: 100%;
+  transition: right 0.5s;
+  background: #fff;
+  padding: 0 15px;
+  z-index:1;
+}
+.chat .container.on {
+  right: 0;  
+  overflow-y: auto;/* 길면 알아서 생기게 */
+}
+.chat .container .close {
+  width: 20px;
+  height: 20px;
+  background: url(../images/close_bk.svg) no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.chat .content {padding-top: 50px;}
+.chat .title {
+  padding: 110px 0 55px;
+  border-bottom: 1px solid rgb(202, 202, 202);
+}
+.chat .title h2 {
+  font-size: 27px;
+  font-weight: bold;  
+  padding-bottom: 20px;
+}
+.chat .title em {
+  color: rgb(213, 51, 62);
+  font-size: 10px;
+  font-weight:bold;
+  padding-top: 15px;
+  display: inline-block;
+}
+.chat .txt_area strong {
+  padding-bottom: 20px;
+  display: block;
+  font-weight: bold;
+  font-size: 17px;
+}
+.chat .textarea .txt {
+  width: 100%;
+  border: 1px solid rgb(218, 214, 218);
+  background: #f9f9f9;
+  padding: 20px;
+  line-height: 20px;
+  outline: none;
+}
+.chat .chb {
+  display: inline-block;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  position: relative;
+  top: 4px;
+}
+.chat input[type=text] {
+  background: #f9f9f9;
+  border: 1px solid rgb(218, 214, 218);
+  width: 100%;
+  height: 54px;
+  outline: none;
+  padding-left: 20px;
+}
+.chat .touch input {
+  margin-bottom: 10px;
+}
+.chat button {
+  width: 150px;
+  height: 44px;
+  color: rgb(255, 255, 255);
+  background: rgb(213, 51, 62);  
+  border-radius: 30px;
+  border: none;
+  float: right;
+  cursor: pointer;
+  margin: 30px 0;
+}
+.chat > ul > li:hover::after {
+  background-color: ivory;
+}

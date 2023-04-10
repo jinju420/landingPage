@@ -1,0 +1,44 @@
+.blind {
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0 0 0 0);
+}
+.hidden {
+  overflow: hidden;
+}
+.label_box {
+  position: relative;
+}
+.label_style {
+  position: relative;
+  padding-left: 40px;
+  line-height: 30px;
+  display: inline-block;
+  font-size: 15px;
+  color: #999;
+}
+.label_style::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #000;
+}
+.label_style.active::before {
+  background: url(../images/check.png) no-repeat;
+  width: 25px;
+  height: 25px;
+  background-position: center;
+}
+.label_style input[type=checkbox] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* visibility: hidden; */
+  background-color: peru;
+}

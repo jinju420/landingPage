@@ -1,0 +1,449 @@
+body { 
+  font-family: 'Noto Sans KR',sans-serif;
+  /* font-family: 'Teko', sans-serif; */
+  /* font-family: 'DM Serif Display', serif; */
+  /* font-family: 'Dosis', sans-serif; */
+}
+
+/* header */
+header {
+  background: #000;  
+  position: relative;
+  z-index:11;
+}
+header .logo_area {
+  height: 48px;  
+  position: relative;
+}
+header .logo_area h1 {
+  background: url(../images/logo.png) no-repeat;
+  width: 48px;
+  height: 48px;
+  opacity: 0.8;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-position: center;
+}
+header .logo_area h1 a {
+  display: block;
+  height: 100%;
+}
+header .logo_area a.bar {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+}
+header .logo_area a.bar::before {
+  content: "";
+  width: 17px;
+  height: 1px;
+  display: inline-block;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+}
+header .logo_area a.bar::after {
+  content: "";
+  width: 17px;
+  height: 1px;
+  background: #fff;
+  display: inline-block;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+header .logo_area a.bar.close::before {
+  top: 50%;
+  transform: translateX(-50%) rotate(45deg);
+}
+header .logo_area a.bar.close::after {
+  top: 50%;
+  transform: translateX(-50%) rotate(-45deg);
+}
+header .bar_sub {
+  background-color: #000;
+  height: 100vh;
+  color: #fff;
+  position: absolute;
+  top:48px;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  padding: 0 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+header .bar_sub.on {
+  opacity: 1;
+  visibility: visible;
+}
+header .bar_sub i.srh {
+  background: url(../images/srh.svg) no-repeat;
+  display: inline-block;
+  width: 23px;
+  height: 18px;
+  position: absolute;
+  background-size: 14px;
+  top: 15px;
+  left: 30px;  
+  border: none;
+}
+header .bar_sub .srh_bar {
+  background-color: rgb(46, 43, 43);
+  padding: 10px;
+  outline: none;  
+  border-radius: 5px;
+  font-size: 16px;
+  padding-left: 30px;
+  width: 100%;
+  color: #fff; 
+}
+header .bar_sub .close {
+  position: absolute;
+  top: -43px;
+  left: 16px;
+  display: inline-block;
+  background-color: #000;
+  font-size: 30px;
+  transform: rotate(45deg);
+}
+header .bar_sub ul {
+  padding: 10px 30px;
+}
+header .bar_sub ul li {
+  padding: 14px 0;
+  color: #ddd;
+  border-bottom: 1px solid #333;
+  /* visibility: hidden;
+  overflow: 0; */
+}
+header .bar_sub ul li:hover {
+  color: #fff;
+}
+header .bar_sub ul li:last-child {
+  border-bottom:none;
+}
+header .logo_area a.shop {
+  background: url(../images/shop.png) no-repeat;
+  width: 18px;
+  height: 20px;
+  background-size: 100%;
+  display: inline-block;
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  right: 0;
+  background-position: center right;
+  margin-right: 16px;
+  cursor: pointer;
+}
+header .logo_area a.shop.on {
+  opacity: 0;
+}
+.all_bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.3);
+  z-index: 10;
+  backdrop-filter: blur(12px);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+  
+}
+.all_bg.on {
+  opacity: 1;
+  visibility: visible;
+}
+header .logo_area .shop_sub {
+  background-color: #fff;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 100%;
+  z-index: 4;
+  opacity: 0;  
+  visibility: hidden;
+  padding-bottom: 50px;
+}
+header .logo_area .shop_sub.on {
+  opacity: 1;
+  visibility: visible;
+}
+header .logo_area .shop_sub span {
+  display: block;
+  padding: 30px 0px;
+  font-size: 17px;
+  text-align: center;
+}
+header .logo_area .shop_sub span::after {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color:#fff;
+  position: absolute;
+  top: -4px;
+  right: 17px;
+  transform: rotate(45deg);
+}
+header .logo_area .shop_sub ul {
+  padding: 0 50px;
+}
+header .logo_area .shop_sub ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+  opacity: 0.5s;
+  color: #999;
+  font-size: 14px;
+  letter-spacing: -0.1px;
+}
+header .logo_area .shop_sub ul li:first-child {
+  border-top: 1px solid #ccc;
+}
+header .logo_area .shop_sub img {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+}
+header .logo_area .shop_sub ul li a {
+  padding-left: 30px;
+  /* background: url(../images/fav.svg) no-repeat; */
+  background-size: 25px;
+  background-position: 0 center;/* 0 == 좌우 상하 */
+  line-height: 20px;
+  display: inline-block;
+}
+header .logo_area .shop_sub ul li.bag a {
+  background: url(../images/wish.png) no-repeat;
+  background-size: 25px;
+}
+header .logo_area .shop_sub ul li.fav a {
+  background: url(../images/wish.png) no-repeat;
+  background-size: 25px;
+}
+header .logo_area .shop_sub ul li.order a {
+  background: url(../images/wish.png) no-repeat;
+  background-size: 25px;
+}
+header .logo_area .shop_sub ul li.account a {
+  background: url(../images/wish.png) no-repeat;
+  background-size: 25px;
+}
+header .logo_area .shop_sub ul li.sign a {
+  background: url(../images/wish.png) no-repeat;
+  background-size: 25px;
+}
+header .title_area {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+  border-bottom: 1px solid rgba(255,255,255,0.24);
+}
+header .title_area h2 {  
+  color: #fff;    
+  font-weight: 700;
+  font-size: 19px;  
+  padding-left:15px;
+}
+header .title_area .right {
+  display: flex;/* right에서 두 영역 정렬시키려고 */
+  align-items: center;
+}
+header .right .arrow {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+header .right .arrow::before {
+  content: "";
+  display: inline-block;
+  transform: rotate(35deg);
+  width: 11px;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 5px;
+}
+header .right .arrow::after {
+  content: "";
+  display: inline-block;
+  transform: rotate(-35deg);
+  width: 11px;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 13px;
+}
+header .right .arrow.on::before {  
+  transform: rotate(-35deg);
+}
+header .right .arrow.on::after {
+  transform: rotate(35deg);
+}
+header .arrow_sub {
+  background-color: #1d1d1f;  
+  width: 100%;
+  z-index: 1;
+  color: #fff;
+  padding: 0 20px;
+  font-size: 14px;
+  font-weight: 300;
+  position: absolute;
+  top: 48px;
+  left: 0;  
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+}
+header .arrow_sub.on {
+  opacity:1;
+  visibility: visible;
+} 
+header .arrow_sub ul {
+  padding: 60px 20px 30px;  
+  
+}
+header .arrow_sub ul li {
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.24);
+}
+header .arrow_sub ul li:last-child {border: 0;}
+header .arrow_sub a:hover {
+  color: #2997ff;
+}
+
+/* header .title_area .arrow_sub ul {}
+header .title_area .arrow_sub ul li {
+  padding: 30px;
+  color: #fff;
+} */
+header .title_area .right .buy { 
+  background: #0071e3;
+  width: 45px;
+  height: 24px;
+  border-radius: 30px;
+  color: #fff;
+  line-height: 24px;
+  font-size: 12px;
+  text-align: center;
+  margin-right: 15px;
+}
+
+/* footer */
+footer {
+  margin-top: 50px;
+  background: #1d1d1f;
+  color: #f5f5f7;
+  padding-left: 20px;
+  font-size: 12px;
+  
+}
+footer .cate > ul > li {
+  border-bottom: 1px solid #424245;  
+}
+footer .cate > ul > li > a {
+  position: relative;  
+  width: 100%;
+  display: inline-block;
+  padding: 10px 0;
+}
+footer .cate > ul > li > a:after {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+footer .cate .sub {
+  height: 0;
+  overflow:hidden;
+}
+footer .cate .sub > ul > li {
+  color: #a1a1a6;
+  padding: 10px;
+}
+footer .cate .sub > ul > li:last-child {padding-bottom: 15px;}
+footer .cate .sub > ul > li:hover {
+  color: #f5f5f7;
+}
+footer .cate .sub > ul > li > a:hover::after {
+  content: "";
+  border-bottom: 1px solid #f5f5f7;
+  width: 100%;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+footer .cate .sub > ul > li > a {
+  position: relative;
+}
+footer .bottom {padding: 19px 0;}
+footer .bottom .shop {
+  line-height: 16px;
+  padding-bottom: 20px;
+}
+footer .bottom .shop span {
+  color: #6e6e73;
+}
+footer .bottom .shop span a {
+  color: #2997ff;
+  position: relative;
+}
+footer .bottom .shop span a::after {
+  content: "";  
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+footer .bottom .shop span a:hover::after {  
+  border-bottom: 1px solid #2997ff;
+} 
+footer .bottom a.link {
+  color: #a1a1a6;
+}
+footer .bottom .copy span {
+  padding-top: 20px;
+  display: inline-block;
+  color: #6e6e73;
+  display: block;
+}
+footer .bottom .copy a {
+  color: #a1a1a6;
+  padding-top: 10px;
+  display: inline-block;
+}
+footer .bottom .copy a:hover {     
+  color: #f5f5f7;
+  text-decoration: underline;
+}
+footer .bottom .copy a::after {
+  content: "";
+  width: 1px;
+  height: 12px;
+  background-color: #424245;
+  display: inline-block;
+  margin: -3px 8px;
+}
+footer .bottom .copy a:last-child::after {display: none;}
+footer .eng {font-family: Montserrat,sans-serif;}
